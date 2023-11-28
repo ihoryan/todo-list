@@ -27,6 +27,7 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 import { AllConfigType } from './config/config.type';
 import { SessionModule } from './session/session.module';
 import { MailerModule } from './mailer/mailer.module';
+import { TodoListsModule } from './todo-lists/todo-lists.module';
 
 @Module({
   imports: [
@@ -85,6 +86,7 @@ import { MailerModule } from './mailer/mailer.module';
     MailModule,
     MailerModule,
     HomeModule,
+    TodoListsModule,
   ],
 })
 export class AppModule {}
